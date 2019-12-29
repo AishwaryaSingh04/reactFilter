@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: MetaWebPro-Normal, Meta-Norm, Arial, Helvetica, sans-serif;
+}
+
+.input-container {
+  position: relative;
+}
+
+.form-wrapper,
+.tab-panel {
+  padding: 25px 0;
+}
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: 8px;
+  bottom: 10px;
+  left: 12px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+input:focus .floating-label {
+  color: red;
+}
+
+.dollar:focus {
+  color: red;
+  display: inline-block;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 300px;
+  height: 35px;
+  padding: 10px 10px 0;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 17px;
+  left: 12px;
+  font-size: 0.9375em;
+  transition: 0.2s ease all;
+  font-weight: bold;
+}
+.button-wrapper {
+  padding-left: 0px;
+}
+.custom-button {
+  background-color: orangered;
+  color: #fff;
+}
+.custom-button:hover {
+  background-color: orangered;
+  color: #fff;
+}
+.dollar {
+  font-size: 0.9375em;
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  /* display: none; */
+}
+
+input:focus {
+  color: red;
+}
